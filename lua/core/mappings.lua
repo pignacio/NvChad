@@ -130,6 +130,11 @@ M.lspconfig = {
   -- See `<cmd> :help vim.lsp.*` for documentation on any of the below functions
 
   n = {
+    ["ga"] = {
+      "<cmd>Telescope aerial<CR>",
+      "File outline",
+    },
+
     ["gD"] = {
       function()
         vim.lsp.buf.declaration()
@@ -184,6 +189,13 @@ M.lspconfig = {
         vim.lsp.buf.code_action()
       end,
       "LSP code action",
+    },
+
+    ["gf"] = {
+      function()
+        require("actions-preview").code_actions()
+      end,
+      "Code Action Preview",
     },
 
     ["gr"] = {

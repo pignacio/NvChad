@@ -12,6 +12,11 @@ M.ui = {
       },
     },
   },
+  hl_override = {
+    Search = {
+      bg = "green",
+    }
+  },
 }
 
 M.plugins = "custom.plugins"

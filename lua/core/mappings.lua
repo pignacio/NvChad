@@ -256,6 +256,12 @@ M.lspconfig = {
   },
 
   v = {
+    ["gf"] = {
+      function()
+        require("actions-preview").code_actions()
+      end,
+      "Code Action Preview",
+    },
     ["<leader>ca"] = {
       function()
         vim.lsp.buf.code_action()

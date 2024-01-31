@@ -8,13 +8,13 @@ M.ui = {
       base_30 = {
         grey = "#888888",
         grey_fg = "#999999",
-        grey_fg2 = "#aaaaaa"
+        grey_fg2 = "#AAAAAA"
       },
     },
   },
   hl_override = {
     Search = {
-      bg = "green",
+      bg = "#ABE9B3",
     }
   },
 }
